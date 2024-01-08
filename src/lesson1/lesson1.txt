@@ -1,0 +1,47 @@
+Java is a platform-independent, object-oriented programming language (OOP).
+
+JDK(Java Development Kit) is a software development kit used for developing Java applications.(It includes JRE, compiler (javac) and other tools).
+JRE(Java Runtime Environment) is used for running Java applications.(It includes JVM, libraries and other components).
+JVM(Java Virtual Machine) is the virtual machine that executes the Java bytecode on a specific platform.
+JVM is responsible for converting Java bytecode into machine code and managing the memory and resources needed for program execution.
+
+Java has eight primitive data types. They are not objects and do not have methods.
+    byte: 8-bit signed integer.
+    short: 16-bit signed integer.
+
+    int: 32-bit signed integer.(-2^31 - 2^31-1.)
+    long: 64-bit signed integer. (2^63-1)
+
+    float: 32-bit floating-point number.
+    double: 64-bit floating-point number.
+
+    char: 16-bit Unicode character.
+    boolean: Represents true or false values.
+
+    ********
+ String text = "hello"; - string literal.
+ String text2 = new String("hello"); - new string instance.
+
+ The string literal is created in the string pool, which is a special area in the heap memory.
+ When the compiler encounters a string literal, it checks the string pool to see if an identical string already exists.
+ If it does, the existing reference is used; otherwise, a new string is created in the pool.
+ This helps to conserve memory by reusing existing strings
+
+ new String - creates a new string instance in the heap memory, regardless of whether an identical string already exists in the string pool.
+
+    *********
+    private int; - default value is 0
+    private Integer; - default value is null
+ In Java, int is a primitive data type, while Integer is a wrapper class for the primitive type int.
+
+    *********
+ Lombok is an annotation-based Java library that allows to reduce boilerplate code.
+        @Getter annotation is used to automatically generate getter methods for the fields in a class.
+        @Setter is used to generate setter methods for the fields in a class.
+        @NoArgsConstructor annotation is used to generate a no-argument constructor for the class.
+            This is useful when you want to create instances of the class without providing any initial values for its fields.
+        @AllArgsConstructor is used to generate a constructor that includes parameters for all the fields in the class.
+        @Builder annotation is used to automatically generate a builder pattern for a class and allows to set only the desired parameters.
+
+    *********
+ ArrayList can grow or shrink in size as needed.
