@@ -1,0 +1,25 @@
+In Java there are four main access modifiers:
+        public: Visible everywhere.
+        protected: Visible within the same package and by subclasses (even in other packages).
+        Default (package-private): Visible within the same package.
+        private: Visible only within the declaring class.
+
+Inheritance is a mechanism by which a new class is created by inheriting fields and methods from an existing class.
+
+Composition relationship of two objects is possible when one object contains another object, and that object is fully dependent on it.
+Aggregation implies a weaker relationship where the part class can exist independently of the aggregate class
+
+Enum is a special data type used to define a set of constant values.
+    values() method returns an array containing all the values of the enum
+    valueOf(String name) method returns the enum constant with the specified name.
+    ordinal() method returns the position of an enum constant in its enum declaration, starting from zero.
+
+We can associate data with each enum. These associated values are specified within the parentheses after each enum constant.
+
+final keyword :
+         Indicates that a variable's value cannot be changed, a method cannot be overridden, or a class cannot be subclassed.
+
+static keyword :
+         Indicates that a variable or method belongs to the class rather than instances, and a nested class is a static member of the outer class.
+
+Singleton suggests a design pattern where a class is designed to allow only one instance to be created.
