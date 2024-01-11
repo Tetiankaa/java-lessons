@@ -1,0 +1,19 @@
+Interface is an abstract type that contains a collection of methods and constant variables.
+Classes that implement the interface must provide concrete implementations for abstract methods.
+Interfaces can contain constants, which are public, static, and final by default.
+Java 8 introduced default methods, which allow interfaces to provide a default implementation for methods.
+Classes that implement the interface can choose to override the default method.
+
+Overloading involves defining multiple methods with the same name in the same class, differing in terms of their parameters.
+Overriding involves providing a specific implementation for a method in a subclass that is already present in its superclass.
+
+Abstract class can not be initiated by itself, it needs to be extends by another class to use its properties.
+Abstract classes can contain variables, which can be used by both the abstract class and its subclasses.
+ An abstract method is a method without a body.
+An abstract modifier applicable for classes and methods but not for Variables.
+
+Anonymous class is a class defined within a method that does not have a name.
+It is created at the same time as it is defined.
+
+Functional interface is an interface that consists of a single method.
+A lambda expression is a short block of code which takes in parameters and returns a value.
