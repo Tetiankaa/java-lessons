@@ -93,7 +93,7 @@ public class Main {
         // hashCode method
         Vegetable tomato1 = new Vegetable(1,"tomato");
         Vegetable tomato2 = new Vegetable(1,"tomato");
-        System.out.println(tomato1 == tomato2);
-        System.out.println(tomato1.hashCode() == tomato2.hashCode());
+        System.out.println(tomato1 == tomato2); // false
+        System.out.println(tomato1.hashCode() == tomato2.hashCode()); // true
     }
 }
