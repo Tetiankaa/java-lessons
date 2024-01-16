@@ -1,0 +1,48 @@
+A Collection is an interface allowing items to be grouped within a single container object.
+It extends the Iterable interface, allowing collections to be iterated (looped) using the enhanced for loop.
+
+• Collection
+    - List interface: we can store all the ordered collections of the objects.
+         1) ArrayList internally uses a dynamic array to store elements. ArrayList generally has lower memory overhead.
+         2) LinkedList  internally uses a doubly-linked list to store elements.
+         3) Vector and Stack are both synchronized, which means they are thread-safe, but this comes at the cost of potential performance overhead.
+
+     - Queue interface: represents a collection that orders elements in a first-in-first-out (FIFO) manner.
+       Elements are added at the end of the queue, and they are removed from the front. Does not guarantee any specific order.
+         1) PriorityQueue elements are retrieved in sorted order.
+            Suppose, we want to retrieve elements in the ascending order. In this case, the head of the priority queue will be the smallest element.
+            Once this element is retrieved, the next smallest element will be the head of the queue.
+
+     - Deque interface: extends Queue and represents a double-ended queue.
+      In addition to the FIFO behavior of a queue, a Deque allows elements to be added or removed from both ends.
+         1) ArrayDeque kind of array that grows and allows users to add or remove an element from both sides of the queue.
+
+     - Set interface: represents a collection of unique elements, where duplicate elements are not allowed.
+      Does not guarantee the order of elements.
+         1) HashSet allows to store multiple values in a collection using a hash table(in an unordered method with the help of hashing mechanism)
+         2) LinkedHashSet lets us iterate through the elements in the order in which they were inserted.
+         3) TreeSet objects are sorted and stored in ascending order according to their natural order.
+
+Map stores elements based on a key-value pair. Can't contain duplicate keys; each key is associated with exactly one value.
+• Map
+      - HashMap implements a hash table for storage, doesn't guarantee any specific order of elements.
+      - LinkedHashMap extends HashMap and maintains a doubly-linked list for ordering entries by insertion order or access order.
+      - TreeMap maintains elements in sorted order based on their natural order or a specified comparator.
+
+      - HashTable considered obsolete; does not implement the Map interface, which makes it difficult to use in conjunction with other parts of the framework.
+
+
+The hashCode method is used to compute a hash code for an object.
+
+ Stream is a sequence of elements that can be processed in a functional style. Introduced in Java 8.
+ Operations on a stream can be pipelined. Stream operations do not modify the underlying data source.
+        - filter(Predicate<T> predicate) - Returns a stream consisting of elements that match the given predicate.
+        - map(Function<T, R> mapper) - Applies a function to each element of the stream, producing a new stream of the results.
+        - reduce(T identity, BinaryOperator<T> accumulator) - Performs a reduction on the elements of the stream using an associative accumulation function
+         and returns an Optional.
+        - collect(Collector<T, A, R> collector) - Transforms the elements of the stream into a different form, usually a collection like List, Set, or Map.
+        - sorted() - Returns a stream sorted according to the natural order of its elements.
+        - sorted(Comparator<T> comparator) - Returns a stream sorted according to the provided comparator.
+        - flatMap is used to flatten a stream of elements into a single stream.
+        It is particularly useful when you have a stream of elements that are themselves collections or streams,
+        and you want to process the elements of those inner collections as if they were part of the outer stream.
