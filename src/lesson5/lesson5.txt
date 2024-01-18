@@ -1,0 +1,40 @@
+Exception is an unexpected event, which occurs during the execution of a program, that disrupts the normal flow of the program.
+
+Errors represent irrecoverable conditions such as JVM running out of memory, memory leaks, stack overflow errors, library incompatibility, infinite recursion, etc.
+Errors are usually beyond the control of the programmer, and we should not try to handle errors.
+
+Exceptions can be categorized in two ways:
+
+    1. Built-in Exceptions
+        -Checked Exceptions - are checked at compile-time by the compiler.
+            *IOException: occurs when input/output operation fails
+            *SQLException: related to database operations.
+
+        -Unchecked Exception (also known as an runtime exception) - The compiler will not check these exceptions at compile time.
+        (is something that has gone wrong with the program and is unrecoverable.)
+            *NullPointerException: trying to access methods or fields of a null object.
+            *ArrayIndexOutOfBoundsException: trying to access an array with an illegal index.
+            *ArithmeticException:  arithmetic operations, such as division by zero.
+            *ClassCastException: when trying to cast an object to an incompatible type.
+                        Object obj = "Hello";
+                        Integer num = (Integer) obj;
+
+“If a client can be expected to recover from an exception, make it a checked exception.
+If a client cannot do anything to recover from the exception, make it an unchecked exception.”
+
+    2. User-Defined Exceptions.
+        Sometimes, the built-in exceptions are not able to describe a certain situation.
+        In such cases, users can also create exceptions, which are called ‘user-defined Exceptions’.
+            - printStackTrace(): prints exception information in the format of the Name of the exception: description of the exception, stack trace.
+            - toString() method prints exception information in the format of the Name of the exception: description of the exception.
+            - getMessage() method prints only the description of the exception.
+
+ The throw keyword is used to explicitly throw an exception.
+ Custom exceptions can be created by extending the Exception class.
+
+  ****************
+
+Paths - return a Path instance by converting a path string or URI.
+Files.write() -  is used for writing content to a file, expects a byte array as the content to be written.
+Files.read() - is used for reading content from e file.
+.getBytes(StandardCharsets.UTF_8) converts the string into a byte array using UTF-8 encoding.
